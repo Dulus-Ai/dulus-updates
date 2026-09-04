@@ -4,6 +4,9 @@ This repository is the public release channel for Dulus Premium desktop
 artifacts. It contains release binaries and their SHA-256 sidecars only; the
 Premium source code and customer data stay private.
 
+<img width="1371" height="1207" alt="HRU8-zPaoAAunno" src="https://github.com/user-attachments/assets/0b3c88f8-40be-4507-8b2c-054c2de36c92" />
+
+
 ## Release contract
 
 - Tags use `vX.Y.Z` (for example `v3.12.0`).
