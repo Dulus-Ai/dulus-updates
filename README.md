@@ -1,4 +1,4 @@
-# Dulus Premium updates
+# Dulus Premium updates.
 
 This repository is the public release channel for Dulus Premium desktop
 artifacts. It contains release binaries and their SHA-256 sidecars only; the
