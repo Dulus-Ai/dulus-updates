@@ -1,3 +1,4 @@
+
 # Dulus Premium updates.
 
 This repository is the public release channel for Dulus Premium desktop
@@ -20,4 +21,4 @@ Premium checks this channel once at startup and then once every 24 hours while
 the app is open. Updates are announced non-blockingly; the user opens the
 GitHub release page and installs the signed artifact manually.
 
-v6.1.1 released.
+v6.1.4 released.
