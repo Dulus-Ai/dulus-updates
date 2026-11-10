@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/bird.png" width="128" alt="The Dulus bird, a golden palmchat in flight">
+  <img src="assets/bird.png?v=2" width="128" alt="The Dulus bird, a golden palmchat in flight">
 </p>
 
 <h1 align="center">Dulus App</h1>
