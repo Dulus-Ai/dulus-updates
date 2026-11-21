@@ -1,0 +1,38 @@
+name: Attach asset from URL
+
+# Downloads a file from a URL on GitHub's runners and attaches it to a release,
+# so large installers never have to travel up from a developer machine.
+on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: "Release tag (e.g. v7.0.4)"
+        required: true
+      name:
+        description: "Asset file name"
+        required: true
+      url:
+        description: "Direct download URL (short-lived links are fine)"
+        required: true
+
+permissions:
+  contents: write
+
+jobs:
+  attach:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - name: Download and attach
+        env:
+          TAG: ${{ inputs.tag }}
+          NAME: ${{ inputs.name }}
+          URL: ${{ inputs.url }}
+        run: |
+          echo "::add-mask::$URL"
+          curl -fL --retry 3 -o "$NAME" "$URL"
+          ls -l "$NAME"
+          sha256sum "$NAME"
+          gh release upload "$TAG" "$NAME" -R "$GITHUB_REPOSITORY" --clobber
