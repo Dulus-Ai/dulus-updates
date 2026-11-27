@@ -133,6 +133,5 @@ Palmchats live in flocks. Together they build one great nest of twigs, high in t
 ## Homebrew (macOS)
 
 ```sh
-brew tap dulus-ai/dulus-updates https://github.com/Dulus-Ai/dulus-updates
-brew install --cask dulus
+brew install --cask dulus-ai/tap/dulus
 ```
