@@ -129,3 +129,10 @@ Dulus is named after the palmchat — the *cigua palmera*, national bird of the 
 Palmchats live in flocks. Together they build one great nest of twigs, high in the royal palms, and inside it every pair keeps its own chamber with its own entrance. One roof, many rooms. Dulus is made the same way: one human, Kevin Rojo, sets the direction; a flock of agents does the work.
 
 <p align="center"><sub>Named after the bird, not the rocket. Built in Santo Domingo 🇩🇴 · We keep flying.</sub></p>
+
+## Homebrew (macOS)
+
+```sh
+brew tap dulus-ai/dulus-updates https://github.com/Dulus-Ai/dulus-updates
+brew install --cask dulus
+```
